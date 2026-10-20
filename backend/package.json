@@ -1,0 +1,38 @@
+{
+  "name": "ridex-backend",
+  "version": "1.0.0",
+  "description": "Production-grade backend for RideX cab booking platform",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "keywords": [
+    "ridex",
+    "cab-booking",
+    "express",
+    "socket.io",
+    "supabase",
+    "clerk",
+    "stripe"
+  ],
+  "author": "RideX Team",
+  "license": "MIT",
+  "dependencies": {
+    "@clerk/backend": "^1.24.1",
+    "@supabase/supabase-js": "^2.49.1",
+    "cors": "^8.8.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "socket.io": "^4.8.1",
+    "stripe": "^17.7.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0"
+  }
+}

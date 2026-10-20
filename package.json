@@ -1,0 +1,16 @@
+{
+  "name": "ridex",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "build": "npm --prefix frontend run build",
+    "start": "concurrently \"npm --prefix backend run start\" \"npm --prefix frontend run start\"",
+    "lint": "npm --prefix frontend run lint",
+    "backend": "npm --prefix backend run dev",
+    "frontend": "npm --prefix frontend run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
